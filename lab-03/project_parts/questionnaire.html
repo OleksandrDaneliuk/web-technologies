@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета учасника</title>
+
+</head>
+<body>
+
+<form action="" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Особисті та контактні дані</legend>
+
+        <div>
+            <label for="name">ПІБ:</label><br>
+            <input type="text" id="name" name="fullname" tabindex="1" required placeholder="Іван Іванович Іваненко">
+        </div>
+
+        <div>
+            <label for="date">Дата народження:</label><br>
+            <input type="date" id="date" name="birthdate" tabindex="2" required>
+        </div>
+
+        <div>
+            <p>Вкажіть вашу стать:</p>
+            <input type="radio" id="gender_male" name="gender" value="male" tabindex="3">
+            <label for="gender_male">Чоловіча</label>
+
+            <input type="radio" id="gender_female" name="gender" value="female" tabindex="4">
+            <label for="gender_female">Жіноча</label>
+
+            <input type="radio" id="gender_other" name="gender" value="other" tabindex="5">
+            <label for="gender_other">Інша</label>
+        </div>
+
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" tabindex="6" required autocomplete="off" placeholder="mail@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </div>
+
+        <div>
+            <label for="tel">Мобільний телефон:</label><br>
+            <input type="tel" id="tel" name="phone" tabindex="7" required pattern="^\+380\d{9}$" placeholder="+380XXXXXXXXX" title="Формат: +380 і 9 цифр">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Дані для авторизації</legend>
+
+        <div>
+            <label for="password">Пароль: </label><br>
+            <input type="password" id="password" name="password" tabindex="8" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6}" placeholder="Мінімум 6 символів (Aa1)" title="Пароль має містити 6 символів, велику і малу літеру та цифру">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Професійні навички</legend>
+
+        <div>
+            <label for="skills">Рівень досвіду:</label><br>
+            <select id="skills" name="experience" tabindex="9">
+                <option value="trainee">Trainee</option>
+                <option value="junior">Junior</option>
+                <option value="middle" selected>Middle</option>
+                <option value="senior">Senior</option>
+                <option value="lead">Lead</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="lang">Мови програмування:</label><br>
+            <select id="lang" name="languages[]" multiple tabindex="10" size="6">
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="PHP">PHP</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Ruby">Ruby</option>
+            </select>
+            <small><br>*Утримуйте Ctrl, щоб обрати кілька варіантів</small>
+        </div>
+
+        <div>
+            <label for="direction">Напрямок (4 групи по 3 значення):</label><br>
+            <select id="direction" name="direction" tabindex="11">
+                <optgroup label="Frontend">
+                    <option value="react">React</option>
+                    <option value="vue">Vue</option>
+                    <option value="angular">Angular</option>
+                </optgroup>
+                <optgroup label="Backend">
+                    <option value="node">Node.js</option>
+                    <option value="django">Django</option>
+                    <option value="laravel">Laravel</option>
+                </optgroup>
+                <optgroup label="Mobile">
+                    <option value="flutter">Flutter</option>
+                    <option value="swift">Swift</option>
+                    <option value="kotlin">Kotlin</option>
+                </optgroup>
+                <optgroup label="Design">
+                    <option value="figma">Figma</option>
+                    <option value="photoshop">Photoshop</option>
+                    <option value="illustrator">Illustrator</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="ide">Улюблене IDE:</label><br>
+            <input type="text" id="ide" name="ide" list="ide-list" placeholder="Почніть вводити..." tabindex="12">
+            <datalist id="ide-list">
+                <option value="VS Code"></option>
+                <option value="WebStorm"></option>
+                <option value="IntelliJ IDEA"></option>
+                <option value="PyCharm"></option>
+                <option value="Visual Studio"></option>
+            </datalist>
+        </div>
+
+        <div>
+            <p>Додаткові скіли:</p>
+            <input type="checkbox" id="skill_comm" name="softskills[]" value="communication" tabindex="13">
+            <label for="skill_comm">Комунікабельність</label><br>
+
+            <input type="checkbox" id="skill_team" name="softskills[]" value="teamwork" tabindex="14">
+            <label for="skill_team">Робота в команді</label><br>
+
+            <input type="checkbox" id="skill_time" name="softskills[]" value="timemanagement" tabindex="15">
+            <label for="skill_time">Тайм-менеджмент</label><br>
+
+            <input type="checkbox" id="skill_stress" name="softskills[]" value="stress_tolerance" tabindex="16">
+            <label for="skill_stress">Стресостійкість</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Творче завдання та організація</legend>
+
+        <div>
+            <label for="about">Розкажіть про себе:</label><br>
+            <textarea id="about" name="about" rows="4" cols="50" placeholder="Напишіть кілька слів про ваші проєкти..." tabindex="17"></textarea>
+        </div>
+
+        <div>
+            <p>Формат участі:</p>
+            <input type="radio" id="format_offline" name="format" value="offline" tabindex="18">
+            <label for="format_offline">Офлайн</label>
+
+            <input type="radio" id="format_online" name="format" value="online" checked tabindex="19">
+            <label for="format_online">Онлайн</label>
+
+            <input type="radio" id="format_hybrid" name="format" value="hybrid" tabindex="20">
+            <label for="format_hybrid">Гібрид</label>
+        </div>
+
+        <div>
+            <label for="audio_file">Завантажте аудіо-візитку (можна кілька файлів):</label><br><br>
+            <input type="file" id="audio_file" name="audio_files[]" accept="audio/*" multiple tabindex="21">
+        </div>
+    </fieldset>
+
+    <div>
+        <button type="submit" tabindex="22">Відправити анкету</button>
+        <button type="reset" tabindex="23">Очистити форму</button>
+    </div>
+
+    <div>
+        <a href="../index.html"> Повернутися на головну</a>
+    </div>
+</form>
+
+</body>
+</html>
