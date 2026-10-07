@@ -1,0 +1,27 @@
+a {
+    color: purple;
+}
+
+ul li ul {
+    list-style-type: none;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+.last-list a {
+    text-decoration: none;
+}
+
+.text-green{
+    color: green;
+}
+
+.list-style-mark{
+    list-style-image: url("img/mark.png");
+}
+
+.list-style-square{
+    list-style: square;
+}
