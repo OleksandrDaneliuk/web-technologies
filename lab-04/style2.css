@@ -1,0 +1,35 @@
+* {
+    text-align: center;
+}
+
+h1 {
+    color: red;
+    font-weight: bold;
+}
+
+h2 {
+    font-style: italic;
+}
+
+hr {
+    color: green;
+    width: 640px;
+    border: 4px solid green;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.crossed {
+    text-decoration: line-through;
+}
+
+#final-paragraph {
+    font-style: italic;
+    font-family: monospace;
+}
