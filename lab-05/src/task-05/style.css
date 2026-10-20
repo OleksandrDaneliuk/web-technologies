@@ -1,0 +1,48 @@
+.box-content,
+.box-border {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #2563eb;
+    margin: 20px;
+    background-color: #e0f2fe;
+}
+
+.box-content {
+    box-sizing: content-box;
+}
+
+.box-border {
+    box-sizing: border-box;
+}
+
+.overflow-box {
+    max-height: 80px;
+    border: 2px solid #dc2626;
+    margin: 15px 0;
+}
+
+.overflow-visible { overflow: visible; }
+.overflow-hidden  { overflow: hidden; }
+.overflow-scroll  { overflow: scroll; }
+.overflow-auto    { overflow: auto; }
+
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 10px 20px;
+}
+
+.nav-menu .hidden-menu-item {
+    display: none;
+}
+

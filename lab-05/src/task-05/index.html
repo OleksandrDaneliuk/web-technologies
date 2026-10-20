@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Демонстрація властивостей box-sizing, overflow та display</h1>
+</header>
+
+<!-- Частина 1: box-sizing -->
+<section class="task-section">
+    <h2>1. Властивість box-sizing</h2>
+    <div class="box-sizing-container">
+        <div class="box-content">
+            <h3>box-sizing: content-box</h3>
+            <p><strong>Загальна ширина блоку:</strong> 350px</p>
+            <p>Розрахунок: 300px (width) + 2 × 20px (padding) + 2 × 5px (border) = <strong>350px</strong>.</p>
+            <p>Внутрішні відступи та межі додаються до заданої ширини.</p>
+        </div>
+
+        <div class="box-border">
+            <h3>box-sizing: border-box</h3>
+            <p><strong>Загальна ширина блоку:</strong> 300px</p>
+            <p>Розрахунок: ширина залишається рівно <strong>300px</strong>.</p>
+            <p>Ширина контенту автоматично зменшується: 300px - (2 × 20px) - (2 × 5px) = 250px.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Частина 2: overflow -->
+<section class="task-section">
+    <h2>2. Властивість overflow</h2>
+    <div class="overflow-container">
+        <div class="overflow-box overflow-visible">
+            <strong>overflow: visible;</strong>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent velit metus, posuere ut venenatis eget, convallis quis velit. Fusce sit amet orci ac ligula eleifend tempus. Sed blandit quis odio sit amet pharetra. Phasellus bibendum sem justo, in tempus augue maximus quis. Vestibulum varius libero at est dignissim suscipit. Donec sit amet lorem in massa cursus finibus. Duis tempus porta tellus. Cras posuere interdum ex sit amet varius. Cras gravida maximus justo, eu dictum dolor varius nec. Phasellus in scelerisque elit,            </p>
+        </div>
+
+        <div class="overflow-box overflow-hidden">
+            <strong>overflow: hidden;</strong>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent velit metus, posuere ut venenatis eget, convallis quis velit. Fusce sit amet orci ac ligula eleifend tempus. Sed blandit quis odio sit amet pharetra. Phasellus bibendum sem justo, in tempus augue maximus quis. Vestibulum varius libero at est dignissim suscipit. Donec sit amet lorem in massa cursus finibus. Duis tempus porta tellus. Cras posuere interdum ex sit amet varius. Cras gravida maximus justo, eu dictum dolor varius nec. Phasellus in scelerisque elit,            </p>
+        </div>
+
+        <div class="overflow-box overflow-scroll">
+            <strong>overflow: scroll;</strong>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent velit metus, posuere ut venenatis eget, convallis quis velit. Fusce sit amet orci ac ligula eleifend tempus. Sed blandit quis odio sit amet pharetra. Phasellus bibendum sem justo, in tempus augue maximus quis. Vestibulum varius libero at est dignissim suscipit. Donec sit amet lorem in massa cursus finibus. Duis tempus porta tellus. Cras posuere interdum ex sit amet varius. Cras gravida maximus justo, eu dictum dolor varius nec. Phasellus in scelerisque elit,            </p>
+        </div>
+
+        <div class="overflow-box overflow-auto">
+            <strong>overflow: auto;</strong>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent velit metus, posuere ut venenatis eget, convallis quis velit. Fusce sit amet orci ac ligula eleifend tempus. Sed blandit quis odio sit amet pharetra. Phasellus bibendum sem justo, in tempus augue maximus quis. Vestibulum varius libero at est dignissim suscipit. Donec sit amet lorem in massa cursus finibus. Duis tempus porta tellus. Cras posuere interdum ex sit amet varius. Cras gravida maximus justo, eu dictum dolor varius nec. Phasellus in scelerisque elit,            </p>
+        </div>
+    </div>
+</section>
+
+<section class="task-section">
+    <h2>3. Властивість display (Горизонтальне меню)</h2>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#services">Послуги</a></li>
+            <li class="hidden-menu-item"><a href="#secret">Прихований пункт</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+        </ul>
+    </nav>
+</section>
+
+</body>
+</html>
