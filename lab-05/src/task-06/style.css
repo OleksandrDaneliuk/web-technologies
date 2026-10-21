@@ -1,0 +1,106 @@
+body {
+    background-color: #1b2a41;
+    background-image: url('/img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+
+main {
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+/*
+  ПОЯСНЕННЯ (Контейнер):
+  Коли вікно браузера стає вужчим за 320px, властивість min-width: 320px блокує подальше
+  стискання контейнера. В результаті контейнер виходить за межі ширини вікна перегляду
+  (viewport), і в браузері з'являється горизонтальна смуга прокручування (горизонтальний скрол).
+*/
+
+
+.inline-div {
+    display: inline;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #333;
+}
+
+/*
+  ПОЯСНЕННЯ (display: inline):
+  Значення width та height не діють на елементи зі значенням display: inline,
+  тому що для рядкових елементів за специфікацією CSS блокова модель ігнорує
+  геометричні розміри ширини та висоти — їхній розмір формується виключно вмістом.
+*/
+
+.spans-container {
+    margin-top: 15px;
+}
+
+.block-span {
+    display: block;
+    width: 150px;
+    border: 1px solid #666;
+    margin-bottom: 5px;
+}
+
+
+.repeat-box {
+    height: 200px;
+    background-image: url('/img/icon.png');
+    border: 1px solid #aaa;
+    margin-bottom: 10px;
+}
+
+.repeat-x     { background-repeat: repeat-x; }
+.repeat-y     { background-repeat: repeat-y; }
+.repeat-space { background-repeat: space; }
+.repeat-round { background-repeat: round; }
+
+/*
+  ПОЯСНЕННЯ (Різниця між space та round):
+  - space: повторює картинку цілу кількість разів без обрізання країв. Простір,
+    що залишився, рівномірно розподіляється між картинками як порожні проміжки.
+  - round: також повторює картинку цілу кількість разів без обрізання, але масштабує
+    (стискає або розтягує) зображення так, щоб повністю заповнити блок без проміжків.
+*/
+
+.size-box {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #000;
+    background-image: url('/img/photo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.size-contain { background-size: contain; }
+.size-cover   { background-size: cover; }
+
+.attachment-box {
+    max-height: 150px;
+    overflow: auto;
+    background-image: url('/img/photo.png');
+    border: 1px solid #444;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.attachment-scroll { background-attachment: scroll; }
+.attachment-local  { background-attachment: local; }
+
+/*
+  ПОЯСНЕННЯ (Різниця між scroll та local всередині скрол-блоку):
+  - scroll: фон прив'язаний до меж самого елемента (контейнера). При прокручуванні
+    тексту всередині блоку смугою скролу фонове зображення залишається нерухомим.
+  - local: фон прив'язаний безпосередньо до вмісту (контенту). При прокручуванні
+    вмісту фонове зображення рухається (прокручується) разом із текстом.
+*/
