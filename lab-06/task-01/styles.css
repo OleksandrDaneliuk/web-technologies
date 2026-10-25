@@ -1,0 +1,46 @@
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 220px;
+    margin: 0 auto;
+}
+
+.block {
+    box-sizing: border-box;
+    position: absolute;
+    border: 2px solid #000;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.green-block {
+    background-color: #00a844;
+    color: #000;
+    width: 49.5%;
+    height: 200px;
+    top: 0;
+    z-index: 1;
+}
+
+.left-block {
+    left: 0;
+}
+
+.right-block {
+    right: 0;
+}
+
+.center-block {
+    background-color: #5285d8;
+    color: #fff;
+    width: 50%;
+    height: 80px;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+}
