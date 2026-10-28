@@ -43,22 +43,13 @@ body {
 
 .cloud {
     position: absolute;
-    top: 130px;
-    left: 240px;
+    top: -25px;
+    left: -10px;
     z-index: 3;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.95;
-    box-shadow:
-            -90px 50px 22px 18px rgba(255, 255, 255, 0.85),
-            -40px 20px 26px 30px #fff,
-            20px -5px 30px 42px #fff,
-            90px -15px 28px 38px rgba(255, 255, 255, 0.95),
-            150px 15px 28px 34px rgba(255, 255, 255, 0.85),
-            190px 40px 24px 20px rgba(255, 255, 255, 0.7),
-            40px 40px 30px 30px rgba(255, 255, 255, 0.9);
+    width: 560px;
+    aspect-ratio: 1988 / 1290;
+    background: url("cloud.png") center / contain no-repeat;
+    pointer-events: none;
 }
 
 .arrows {
