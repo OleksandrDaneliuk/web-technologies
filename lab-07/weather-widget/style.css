@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.weather {
+    width: 400px;
+}
+
+.current {
+    padding: 16px 16px 20px;
+    border-bottom: 1px solid  #ccc;
+}
+
+.city {
+    margin: 0 0 6px;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.date, .condition {
+    margin: 0;
+    font-size: 15px;
+    color: #888;
+    line-height: 1.5;
+}
+
+.current-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.current-temp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.current-icon { width: 64px; height: 64px; }
+
+.temp-value { font-size: 56px; font-weight: 300; line-height: 1; }
+.temp-unit  { align-self: flex-start; margin-top: 4px; font-size: 20px; color:  #888; }
+
+.current-details {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+.label { color:  #888; }
+
+.forecast {
+    display: flex;
+    flex-direction: column;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.day-name {
+    flex: 0 0 120px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.day-icon {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+}
+.day-icon img { width: 48px; height: 48px;}
+
+.day-temp {
+    flex: 0 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.35;
+}
+.day-temp .low { color:  #888; }
+
+.day-pollen {
+    flex: 0 0 100px;
+    text-align: right;
+    font-size: 16px;
+}
+
